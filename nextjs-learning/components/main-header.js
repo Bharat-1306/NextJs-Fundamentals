@@ -33,6 +33,12 @@ export default function MainHeader() {
             <li>
               <Link href="/community" className="nav-link no-underline text-[#ddd6cb] font-bold px-4 py-2 rounded-lg">Foodies Community</Link>
             </li>
+            <li>
+              <Link href="/blog" className="nav-link no-underline text-[#ddd6cb] font-bold px-4 py-2 rounded-lg">Blog</Link>
+            </li>
+            {/* <li>
+              <Link href="/blog" className="nav-link no-underline text-[#ddd6cb] font-bold px-4 py-2 rounded-lg">Blog2</Link>
+            </li> */}
           </ul>
         </nav>
       </header>

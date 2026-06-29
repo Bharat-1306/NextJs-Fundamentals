@@ -28,9 +28,13 @@ export default function ImageSlideshow() {
   // looping back to 0 when reaching the end of the images array
   useEffect(() => {
     const interval = setInterval(() => {
+      // Increment index by 1, or reset to 0 if at the last image
+      // This changes currentImageIndex state, which triggers re-render
       setCurrentImageIndex((prevIndex) =>
         prevIndex < images.length - 1 ? prevIndex + 1 : 0
       );
+      // Example: images.length = 7
+      // 0 → 1 → 2 → 3 → 4 → 5 → 6 → 0 (loop back)
     }, 5000);
 
     return () => clearInterval(interval);
